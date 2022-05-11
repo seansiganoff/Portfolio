@@ -58,7 +58,7 @@ body {
 }
 
 .menu {
-    background: #ffffff;
+    background: #7f7f7f;
     display: flex;
     align-items: center;
     position: fixed;
@@ -68,9 +68,9 @@ body {
     bottom: 10px;
     padding: 100px;
     z-index: 1;
-    transition: ease-out .5s;
     visibility: hidden;
     justify-content: center;
+    color: rgb(0, 0, 68);
 }
 
 .menu.is-active {
@@ -78,7 +78,6 @@ body {
     visibility: visible;
     display: flex;
     justify-content: center;
-    transition: ease-in 1s;
 }
 
 .menu_list {
@@ -92,6 +91,9 @@ body {
     margin-bottom: 30px;
 }
 
+
+
+  
 .menu_link {
     position: relative;
     display: inline-flex;
@@ -349,7 +351,7 @@ body {
 
 a:link {
     text-decoration: none;
-    color: white;
+    color: rgb(67, 201, 254);
 }
 a:visited {
     color: rgb(151, 151, 151);
