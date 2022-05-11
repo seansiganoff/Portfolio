@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Cinzel&family=Handlee&family=Maitree:wght@300&family=Merienda:wght@700&family=Moulpali&family=Playfair+Display+SC&family=Single+Day&family=Yrsa&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background: #fff;
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Cinzel', serif;
+}
+
+.btn {
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 2;
+    display: flex;
+    width: 5vw;
+    height: 5vw;
+}
+
+.btn span {
+    width: 20px;
+    height: 2px;
+    background: rgb(0, 0, 0);
+    display: flex;
+    position: absolute;
+    transition: .3s;
+    transition: ease-in-out;
+}
+
+.btn span:nth-child(1) {
+    top: 20%
+}
+.btn span:nth-child(2) {
+    top: 80%;
+}
+
+.btn.is-active span {
+    background: rgb(0, 0, 68);
+}
+
+.btn.is-active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.btn.btn.is-active span:nth-child(2) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.menu {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+    padding: 100px;
+    z-index: 1;
+    transition: ease-out .5s;
+    visibility: hidden;
+    justify-content: center;
+}
+
+.menu.is-active {
+    opacity: .9;
+    visibility: visible;
+    display: flex;
+    justify-content: center;
+    transition: ease-in 1s;
+}
+
+.menu_list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.menu_item:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.menu_link {
+    position: relative;
+    display: inline-flex;
+    font-weight: 600;
+    font-size: 48px;
+    color: rgb(0, 0, 68);
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+.menu_link:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 5px;
+    display: inline-flex;
+    background: rgb(0, 0, 68, 0.7);
+    transition: .3s;
+}
+
+.menu_link:hover:after {
+    width: 100%;
+}
+
+
+
+/* /////////////////////////////////////////// end of nav bar ///////////////////////////////////// */
+
+
+.background-for-the-whole-page {
+    background-image: url('./images/portfolio-background.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background-for-the-whole-page-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.157);
+}
+
+.container-section-1 {
+    margin: 0;
+    width: 100%;
+    
+    height: 100vh;
+}
+
+.main {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    word-break: normal;
+}
+
+.txt-type {
+    border-right: 1px solid #777;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 2%;
+}
+
+.name-text {
+    margin: 0;
+    padding-left: 9%;
+    color: #ffffff;
+    font-size: 4vh;
+    word-break: break-word;
+    font-weight: 100;
+}
+
+.swe-text {
+    margin: 0;
+    padding-left: 9%;
+    color: rgb(212, 212, 212);
+    word-break: normal;
+    font-weight: 100;
+    font-size: 2vh;
+}
+/*/////////////////////////////////////// Section 2 ABOUT /////////////////////////////// */
+.container-section-2 {
+    margin: 0;
+    width: 100%;
+    
+}
+
+.about {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+.about-image {
+    grid-column: 7/7;
+    width: 50vw;
+    height: 50vw;
+    visibility: hidden;
+}
+
+.about-text-container {
+    grid-column: 2 / -1;
+    align-self: center;
+    color: white;
+}
+.about-text-container h1 {
+    margin: 0 auto;
+    padding: 20px;
+    /* padding-bottom: 30px;*/
+    padding-top: 15%;
+    font-size: 7vw;
+    padding-right: 20%;
+    color: rgba(0, 0, 68, 0.829);
+}
+
+.about-image, .about-text-container {
+    grid-row: 4/7;
+}
+
+.about-text-container p {
+    margin: 0 auto;
+    text-align: left;
+    padding: 20px;
+    font-size: medium;
+    padding-bottom: 17%;
+    padding-right: 20%;
+    color: rgb(255, 255, 255);
+    font-family: "Lato", Sans-serif;
+}
+
+
+
+
+
+
+.container-section-3 {
+    margin: 0;
+    width: 100%;
+}
+
+.projects {
+    margin: auto;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.904);
+}
+
+.tetris-container {
+    margin: auto;
+    position: relative;
+    width: 80vw;
+    height: 80vw;
+    background: rgba(255, 255, 255, 0);
+    
+}
+
+.tetris-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.1s ease;
+}
+
+.tetris-front {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    backface-visibility: hidden;
+    font-family: "Lato", Sans-serif;
+}
+
+.tetris-back {
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    backface-visibility: hidden;
+    background: rgb(0, 0, 0);
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
+    display: grid;
+    font-size: 2vh;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    padding: 10%;
+    font-family: "Lato", Sans-serif;
+}
+
+.tetris-card:hover {
+    transform: rotateY(0deg);
+    visibility: hidden;
+}
+
+
+.tetrisImages {
+    display: inline;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.projects h1 {
+    margin: auto;
+    font-size: 5vh;
+    text-align: center;
+    color: rgba(0, 0, 68, 0.801);
+    padding-top: 45px;
+    padding-bottom: 20px;
+    word-break: break-all;
+}
+
+.projects img {
+    margin: 10%;
+    height: 70%;
+    width: 80%;
+
+}
+/* ////////////////////////////////////// Section 4 Github //////////////////////////////////// */
+.container-section-4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(0, 0, 68, 0.801);
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.github-div {
+    transition: 1s;
+    border-radius: 30px;
+    margin: 25px;
+}
+.github-div img {
+    height: 30vw;
+    width: 30vw;
+    
+}
+
+.gitHub {
+    background: black
+    
+}
+
+a:link {
+    text-decoration: none;
+    color: white;
+}
+a:visited {
+    color: rgb(151, 151, 151);
+}
+
+.github-div:hover {
+    transform: scale(1.2);
+    background: black;
+    padding: 25px;
+}
+
+.container-section-5 {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+/* ////////////////////////////////////////// Footer //////////////////////////////////////// */
+
+.footer {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.74);
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    display: grid;
+    
+}
+.contact-container {
+    margin: auto;
+    padding: 38px;
+}
+
+.contact-container h4 {
+    word-break: break-all;
+}
+.footer img {
+    margin: auto;
+}
+
+.material-icons {
+    color: white;
+    margin: auto;
+    padding: 10%;
+}
+h6 {
+    color: rgb(255, 255, 255);
+    padding: 10%;
+}
+.footer h4 {
+    font-size: 3vh;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    word-break: break-all;
+}
+
+
+.reveal {
+    position: relative;
+    transform: translateY(50px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.reveal.active {
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+
+
+
+
+/* ///////////////////////////////////////// Responsive Design //////////////////////////////////////////////////// */
+
+@media only screen and (max-width: 500px) {
+    .menu_link {
+        font-size: 20px;
+    }   
+
+}
+
+
+@media only screen and (min-width: 800px) {
+    .about-me {
+        display: flex;
+    }
+    
+    .github-div img {
+        height: 17vw;
+        width: 17vw;
+        
+    }
+
+    
+    .about-text-container p {
+        font-size: 3vh;
+    }
+    .main h1 {
+        font-size: 3.4vw;
+    }
+
+    .tetris-container {
+        height: 50vw;
+        width: 50vw;
+    }
+    .section-2-img-container  {
+        height: 100%;
+        width: 50%;
+    }
+    .section-2-text-container {
+        width: 50%;
+    }
+    
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .about-text-container h1 {
+        padding-top: 5%;
+        padding-right: 40%;
+        font-size: 4vh;
+    }
+
+    .about-text-container p {
+        padding-bottom: 5%;
+        font-size: 2vh;
+    }
+
+    .swe-text {
+        font-size: 1.5vw;
+    }
+    
+    .about-image, .grid {
+        visibility: visible;
+    }
+    
+    .section-2-text-container {
+        padding: 3%;
+    }
+
+    .projects, .about, .container-section-4, .footer, .grid {
+        width: 70%;
+    }
+
+    .container-section-5 h4 {
+        padding: 10%;
+    }
+
+    .material-icons {
+        margin-bottom: 35px;
+        padding: 30px;
+    }
+    
+}
+
+
+
+@media only screen and (min-width: 1200px) {
+
+    .about-text-container {
+        padding: 0;
+    }
+    .about-image {
+        height: 70vh;
+        width: 70vh;
+    }
+    
+
+    .github-div img {
+        height: 12vw;
+        width: 12vw;
+        
+    }
+
+    .tetris-container {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .tetris-back {
+        visibility: visible;
+    }
+    .tetris-card:hover {
+        transform: rotateY(180deg);
+    }
+
+    .tetrisImages {
+        display: flex;
+    }
+
+    .material-icons {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+   
+}
+
+
+@media only screen and (min-width: 1500px) {
+    .about-text-container h1 {
+        font-size: 7vh;
+    }
+    .about-text-container p {
+        font-size: 2.5vh;
+    }
+    .about-image {
+        height: 63vh;
+        width: 63vh;
+    }
+
+}
+
+
+
