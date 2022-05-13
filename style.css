@@ -13,7 +13,8 @@ body {
     background: #fff;
     min-height: 100vh;
     position: relative;
-    font-family: 'Cinzel', serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
 }
 
 .btn {
@@ -214,7 +215,7 @@ body {
     padding: 20px;
     /* padding-bottom: 30px;*/
     padding-top: 15%;
-    font-size: 7vw;
+    font-size: 5vw;
     padding-right: 20%;
     color: rgba(0, 0, 68, 0.829);
 }
@@ -229,32 +230,67 @@ body {
     padding: 20px;
     font-size: medium;
     padding-bottom: 17%;
+    font-weight: 100;
     padding-right: 20%;
     color: rgb(255, 255, 255);
-    font-family: "Lato", Sans-serif;
 }
 
 
 
+/*/////////////////////////////////////// Section 3 languages /////////////////////////////// */
 
+.container-section-4 {
+    margin: 0;
+    width: 100%;
+    padding: 4vw;
+}
 
+.languages-text {
+    font-size: 4vw;
+    color: white;
+    text-align: center;
+    padding-bottom: 4vw;
+}
+
+.languages {
+    margin: 0 auto;
+    background: rgba(45, 45, 45, 0);
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:  wrap;
+}
+
+.languages-img {
+    height: 8vw;
+    width: 8vw;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+/*/////////////////////////////////////// Section 4 projects /////////////////////////////// */
 
 .container-section-3 {
     margin: 0;
     width: 100%;
+    padding: 4vw;
+    background: rgba(255, 255, 255, 0.904);
 }
 
 .projects {
-    margin: auto;
+    margin: 0;
+    padding: 0;
     width: 100%;
-    background: rgba(255, 255, 255, 0.904);
+    
 }
 
 .tetris-container {
     margin: auto;
     position: relative;
-    width: 80vw;
-    height: 80vw;
+    width: 15vw;
+    height: 15vw;
     background: rgba(255, 255, 255, 0);
     
 }
@@ -290,7 +326,7 @@ body {
     align-items: center;
     visibility: hidden;
     padding: 10%;
-    font-family: "Lato", Sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .tetris-card:hover {
@@ -300,19 +336,20 @@ body {
 
 
 .tetrisImages {
-    display: inline;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:  wrap;
 }
-.projects h1 {
-    margin: auto;
-    font-size: 5vh;
+
+.projects-text {
+    font-size: 4vw;
     text-align: center;
     color: rgba(0, 0, 68, 0.801);
-    padding-top: 45px;
-    padding-bottom: 20px;
     word-break: break-all;
+    padding-bottom: 4vw;
 }
 
 .projects img {
@@ -322,7 +359,7 @@ body {
 
 }
 /* ////////////////////////////////////// Section 4 Github //////////////////////////////////// */
-.container-section-4 {
+.container-section-5 {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -330,18 +367,19 @@ body {
     background-color: rgba(0, 0, 68, 0.801);
     color: white;
     text-align: center;
-    margin: auto;
+    margin: 0;
+    padding: 4vw;
 }
 
 .github-div {
     transition: 1s;
     border-radius: 30px;
-    margin: 25px;
+    margin: 0;
 }
 .github-div img {
     height: 30vw;
     width: 30vw;
-    
+    margin: 0;
 }
 
 .gitHub {
@@ -363,16 +401,7 @@ a:visited {
     padding: 25px;
 }
 
-.container-section-5 {
-    margin: 0;
-    width: 100%;
-    display: flex;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 5%;
-}
+
 
 /* ////////////////////////////////////////// Footer //////////////////////////////////////// */
 
@@ -385,11 +414,17 @@ a:visited {
     align-items: center;
     justify-content: space-evenly;
     display: grid;
-    
+    padding: 4vw;
 }
+
+
+
 .contact-container {
-    margin: auto;
-    padding: 38px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4vw;
 }
 
 .contact-container h4 {
@@ -407,13 +442,14 @@ a:visited {
 h6 {
     color: rgb(255, 255, 255);
     padding: 10%;
+    text-align: center;
 }
 .footer h4 {
-    font-size: 3vh;
-    margin: 0;
-    padding-top: 50px;
-    padding-bottom: 15px;
+    font-size: 4vw;
     word-break: break-all;
+    text-align: center;
+    color: white;
+    padding-bottom: 4vw;
 }
 
 
@@ -435,12 +471,22 @@ h6 {
 
 /* ///////////////////////////////////////// Responsive Design //////////////////////////////////////////////////// */
 
+@media only screen and (max-width: 200px) {
+    .about-text-container p {
+        font-size: 10px;
+        padding: 2%;
+    }
+
+}
+
 @media only screen and (max-width: 500px) {
     .menu_link {
         font-size: 20px;
     }   
 
 }
+
+
 
 
 @media only screen and (min-width: 800px) {
@@ -462,10 +508,7 @@ h6 {
         font-size: 3.4vw;
     }
 
-    .tetris-container {
-        height: 50vw;
-        width: 50vw;
-    }
+    
     .section-2-img-container  {
         height: 100%;
         width: 50%;
@@ -477,17 +520,62 @@ h6 {
 }
 
 
+@media only screen and (max-width: 1000px) {
+    .tetris-container {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    .languages-img {
+        height: 15vw;
+        width: 15vw;
+    }
+
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .tetris-container {
+        width: 80vw;
+        height: 80vw;
+    }
+
+    .about-text-container h1 {
+        font-size: 9vw;
+    }
+    
+    .projects-text {
+        font-size: 9vw;
+        padding: 12vw;
+    }
+
+    .languages-text {
+        font-size: 9vw;
+        padding: 12vw;
+    }
+
+    .footer h4 {
+        font-size: 9vw;
+        padding: 12vw;
+    }
+
+    .contact-container {
+        display: grid;
+    }
+}
+
 @media only screen and (min-width: 1000px) {
     .about-text-container h1 {
         padding-top: 5%;
         padding-right: 40%;
-        font-size: 4vh;
     }
 
     .about-text-container p {
         padding-bottom: 5%;
         font-size: 2vh;
     }
+
+    
 
     .swe-text {
         font-size: 1.5vw;
@@ -501,13 +589,7 @@ h6 {
         padding: 3%;
     }
 
-    .projects, .about, .container-section-4, .footer, .grid {
-        width: 70%;
-    }
-
-    .container-section-5 h4 {
-        padding: 10%;
-    }
+    
 
     .material-icons {
         margin-bottom: 35px;
@@ -535,10 +617,7 @@ h6 {
         
     }
 
-    .tetris-container {
-        height: 20vw;
-        width: 20vw;
-    }
+    
 
     .tetris-back {
         visibility: visible;
@@ -547,10 +626,7 @@ h6 {
         transform: rotateY(180deg);
     }
 
-    .tetrisImages {
-        display: flex;
-    }
-
+   
     .material-icons {
         padding-top: 20px;
         padding-bottom: 20px;
@@ -560,9 +636,7 @@ h6 {
 
 
 @media only screen and (min-width: 1500px) {
-    .about-text-container h1 {
-        font-size: 7vh;
-    }
+    
     .about-text-container p {
         font-size: 2.5vh;
     }
@@ -572,6 +646,4 @@ h6 {
     }
 
 }
-
-
 
