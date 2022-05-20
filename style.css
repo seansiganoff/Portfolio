@@ -124,7 +124,7 @@ body {
 
 
 
-/* /////////////////////////////////////////// end of nav bar ///////////////////////////////////// */
+/* /////////////////////////////////////////// Section 1 heading ///////////////////////////////////// */
 
 
 .background-for-the-whole-page {
@@ -192,105 +192,58 @@ body {
 
 .about {
     display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    background-color: rgba(255, 255, 255, 0.466);
+    background-color: rgba(0, 0, 59, 0.711);
+    padding: 3vw;
+    
 }
 
-.about-image {
-    grid-column: 7/7;
-    width: 50vw;
-    height: 50vw;
-    visibility: hidden;
-}
+
 
 .about-text-container {
-    grid-column: 2 / -1;
     align-self: center;
     color: white;
 }
 .about-text-container h1 {
     margin: 0 auto;
-    padding: 20px;
-    /* padding-bottom: 30px;*/
-    padding-top: 15%;
     font-size: 5vw;
-    padding-right: 20%;
-    color: rgba(0, 0, 68, 0.829);
+    color: white;
 }
 
-.about-image, .about-text-container {
-    grid-row: 4/7;
-}
+
 
 .about-text-container p {
     margin: 0 auto;
+    margin-bottom: 20px;
     text-align: left;
-    padding: 20px;
     font-size: medium;
-    padding-bottom: 17%;
     font-weight: 100;
-    padding-right: 20%;
     color: rgb(255, 255, 255);
 }
 
-
-
-/*/////////////////////////////////////// Section 3 languages /////////////////////////////// */
-
-.container-section-4 {
-    margin: 0;
-    width: 100%;
-    padding: 4vw;
-}
-
-.languages-text {
-    font-size: 4vw;
-    color: white;
-    text-align: center;
-    padding-bottom: 4vw;
-}
-
-.languages {
-    margin: 0 auto;
-    background: rgba(45, 45, 45, 0);
-    width: 70%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow:  wrap;
-}
-
-.languages-img {
-    height: 8vw;
-    width: 8vw;
-    box-sizing: border-box;
-    margin: 20px;
-}
-
-/*/////////////////////////////////////// Section 4 projects /////////////////////////////// */
+/*/////////////////////////////////////// Section 3 projects /////////////////////////////// */
 
 .container-section-3 {
     margin: 0;
     width: 100%;
-    padding: 4vw;
-    background: rgba(255, 255, 255, 0.904);
+    padding-bottom: 0;
+    
 }
 
 .projects {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    
+    margin: 0 auto;
+    padding: 3vw;
+    padding-bottom: 0;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.406);
 }
 
 .tetris-container {
     margin: auto;
     position: relative;
-    width: 15vw;
-    height: 15vw;
+    width: 23vw;
+    height: 23vw;
     background: rgba(255, 255, 255, 0);
     
 }
@@ -358,23 +311,68 @@ body {
     width: 80%;
 
 }
-/* ////////////////////////////////////// Section 4 Github //////////////////////////////////// */
-.container-section-5 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    background-color: rgba(0, 0, 68, 0.801);
+
+
+
+/*/////////////////////////////////////// Section 4 languages /////////////////////////////// */
+
+.container-section-4 {
+    margin: 0 auto;
+    width: 80%;
+    padding: 4vw;
+    background-color: rgba(0, 0, 0, 0.132);
+}
+
+.languages-text {
+    font-size: 4vw;
     color: white;
     text-align: center;
-    margin: 0;
+    padding-bottom: 4vw;
+}
+
+.languages {
+    margin: 0 auto;
+    background: rgba(45, 45, 45, 0);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:  wrap;
+}
+
+.languages-img {
+    height: 8vw;
+    width: 8vw;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+/* ////////////////////////////////////// Section 5 Github //////////////////////////////////// */
+.container-section-5 {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    background-color: rgba(255, 255, 255, 0.648);
+    color: white;
+    text-align: center;
+    margin: 0 auto;
     padding: 4vw;
 }
+
 
 .github-div {
     transition: 1s;
     border-radius: 30px;
     margin: 0;
+}
+
+.container-section-5 h1 {
+    font-size: 4vw;
+    color: rgba(0, 0, 68, 0.801);
+    text-align: center;
+    padding-bottom: 4vw;
 }
 .github-div img {
     height: 30vw;
@@ -403,18 +401,19 @@ a:visited {
 
 
 
-/* ////////////////////////////////////////// Footer //////////////////////////////////////// */
+/* ////////////////////////////////////////// Section 6 Footer //////////////////////////////////////// */
 
 .footer {
-    margin: auto;
+    margin: 0 auto;
     height: 100%;
-    width: 100%;
+    width: 80%;
     background: rgba(0, 0, 0, 0.74);
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
     display: grid;
     padding: 4vw;
+    padding-bottom: 0;
 }
 
 
@@ -471,13 +470,9 @@ h6 {
 
 /* ///////////////////////////////////////// Responsive Design //////////////////////////////////////////////////// */
 
-@media only screen and (max-width: 200px) {
-    .about-text-container p {
-        font-size: 10px;
-        padding: 2%;
-    }
 
-}
+
+
 
 @media only screen and (max-width: 500px) {
     .menu_link {
@@ -486,13 +481,25 @@ h6 {
 
 }
 
+@media only screen and (max-width: 600px) {
+    .about-text-container h1, .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
+        font-size: 7vw;
+    }
+
+    .github-div h3 {
+        font-size: 4vw;
+    }
+
+    .about-text-container p {
+        font-size: 4vw;
+    }
+
+}
 
 
 
 @media only screen and (min-width: 800px) {
-    .about-me {
-        display: flex;
-    }
+    
     
     .github-div img {
         height: 17vw;
@@ -501,9 +508,9 @@ h6 {
     }
 
     
-    .about-text-container p {
+    /* .about-text-container p {
         font-size: 3vh;
-    }
+    } */
     .main h1 {
         font-size: 3.4vw;
     }
@@ -522,13 +529,17 @@ h6 {
 
 @media only screen and (max-width: 1000px) {
     .tetris-container {
-        width: 40vw;
-        height: 40vw;
+        width: 50vw;
+        height: 50vw;
     }
 
     .languages-img {
         height: 15vw;
         width: 15vw;
+    }
+
+    .about-text-container h1, .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
+        margin: 20px auto;
     }
 
     
@@ -540,24 +551,12 @@ h6 {
         height: 80vw;
     }
 
-    .about-text-container h1 {
-        font-size: 9vw;
+    
+    .about, .projects, .container-section-4, .container-section-5, .footer {
+        width: 100%;
     }
     
-    .projects-text {
-        font-size: 9vw;
-        padding: 12vw;
-    }
-
-    .languages-text {
-        font-size: 9vw;
-        padding: 12vw;
-    }
-
-    .footer h4 {
-        font-size: 9vw;
-        padding: 12vw;
-    }
+    
 
     .contact-container {
         display: grid;
@@ -565,28 +564,11 @@ h6 {
 }
 
 @media only screen and (min-width: 1000px) {
-    .about-text-container h1 {
-        padding-top: 5%;
-        padding-right: 40%;
-    }
-
-    .about-text-container p {
-        padding-bottom: 5%;
-        font-size: 2vh;
-    }
-
+    
     
 
     .swe-text {
         font-size: 1.5vw;
-    }
-    
-    .about-image, .grid {
-        visibility: visible;
-    }
-    
-    .section-2-text-container {
-        padding: 3%;
     }
 
     
@@ -601,14 +583,6 @@ h6 {
 
 
 @media only screen and (min-width: 1200px) {
-
-    .about-text-container {
-        padding: 0;
-    }
-    .about-image {
-        height: 70vh;
-        width: 70vh;
-    }
     
 
     .github-div img {
@@ -634,16 +608,4 @@ h6 {
    
 }
 
-
-@media only screen and (min-width: 1500px) {
-    
-    .about-text-container p {
-        font-size: 2.5vh;
-    }
-    .about-image {
-        height: 63vh;
-        width: 63vh;
-    }
-
-}
 
