@@ -83,6 +83,10 @@ function updateLines() {
     document.getElementById('lines').innerText = "LINES: " + lines;
 }
 
+function updateHighScore() {
+    document.getElementById('high-score').innerText = 'HIGH-SCORE: ' + localStorage.getItem('high-score');
+}
+
 
 /////////////////////////////// When a row is complete, this function remove's that row ///////////////////////////////
 function arenaSweep() {
@@ -115,6 +119,8 @@ function playerReset() {
         gameOver = true;
         updateScore();
         updateLines()
+        const hs = player.score > localStorage.getItem('high-score') ? player.score : localStorage.getItem('high-score');
+        localStorage.setItem('high-score', hs)
         ModalWindow.openMedia({ title: 'GAME OVER!', content: 'Would you like to play again?' }); 
     }
 }
@@ -309,6 +315,7 @@ startBtn.onclick = function() {
 function initialize() {
     arena.forEach(row => row.fill(0));
     gameOver = false;
+    updateHighScore()
     player.score = 0;
     lines = 0;
     playerReset();
@@ -364,4 +371,4 @@ const ModalWindow = {
 /////////////////////////////// Puts the score and the lines on the board before the game starts ///////////////////////////////
 updateLines();
 updateScore();
-
+updateHighScore()
