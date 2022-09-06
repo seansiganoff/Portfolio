@@ -423,7 +423,6 @@ a:visited {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 4vw;
 }
 
 .contact-container h4 {
@@ -435,14 +434,17 @@ a:visited {
 
 .material-icons {
     color: white;
-    margin: auto;
-    padding: 10%;
+    padding: 30px;
+    
 }
+
+
 h6 {
     color: rgb(255, 255, 255);
     padding: 10%;
     text-align: center;
 }
+
 .footer h4 {
     font-size: 4vw;
     word-break: break-all;
@@ -472,61 +474,6 @@ h6 {
 
 
 
-
-
-@media only screen and (max-width: 500px) {
-    .menu_link {
-        font-size: 20px;
-    }   
-
-}
-
-@media only screen and (max-width: 600px) {
-    .about-text-container h1, .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
-        font-size: 7vw;
-    }
-
-    .github-div h3 {
-        font-size: 4vw;
-    }
-
-    .about-text-container p {
-        font-size: 4vw;
-    }
-
-}
-
-
-
-@media only screen and (min-width: 800px) {
-    
-    
-    .github-div img {
-        height: 17vw;
-        width: 17vw;
-        
-    }
-
-    
-    /* .about-text-container p {
-        font-size: 3vh;
-    } */
-    .main h1 {
-        font-size: 3.4vw;
-    }
-
-    
-    .section-2-img-container  {
-        height: 100%;
-        width: 50%;
-    }
-    .section-2-text-container {
-        width: 50%;
-    }
-    
-}
-
-
 @media only screen and (max-width: 1000px) {
     .thumbnail-container {
         width: 50vw;
@@ -545,7 +492,20 @@ h6 {
     
 }
 
+
+
 @media only screen and (max-width: 600px) {
+    .about-text-container h1, .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
+        font-size: 7vw;
+    }
+
+    .github-div h3 {
+        font-size: 4vw;
+    }
+
+    .about-text-container p {
+        font-size: 4vw;
+    }
     .thumbnail-container {
         width: 80vw;
         height: 80vw;
@@ -558,10 +518,45 @@ h6 {
     
     
 
-    .contact-container {
-        display: grid;
-    }
 }
+
+
+@media only screen and (max-width: 500px) {
+    .menu_link {
+        font-size: 20px;
+    }   
+
+}
+
+
+
+@media only screen and (min-width: 800px) {
+    
+    
+    .github-div img {
+        height: 17vw;
+        width: 17vw;
+        
+    }
+
+    
+    .main h1 {
+        font-size: 3.4vw;
+    }
+
+    
+    .section-2-img-container  {
+        height: 100%;
+        width: 50%;
+    }
+    .section-2-text-container {
+        width: 50%;
+    }
+    
+}
+
+
+
 
 @media only screen and (min-width: 1000px) {
     
@@ -569,13 +564,6 @@ h6 {
 
     .swe-text {
         font-size: 1.5vw;
-    }
-
-    
-
-    .material-icons {
-        margin-bottom: 35px;
-        padding: 30px;
     }
     
 }
