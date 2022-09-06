@@ -516,9 +516,6 @@ h6 {
     .about, .projects, .container-section-4, .container-section-5, .footer {
         width: 100%;
     }
-    
-    
-
 }
 
 
@@ -531,6 +528,12 @@ h6 {
     }
     h6 {
         font-size: 3vw;
+    }
+
+}
+@media only screen and (max-width: 300px) {
+    .contact-container {
+        display: grid;
     }
 
 }
