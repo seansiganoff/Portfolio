@@ -142,12 +142,17 @@ body {
 }
 
 .container-section-1 {
-    margin: 0;
-    width: 100%;
     
-    height: 100vh;
 }
 
+.container-section-1-overlay {
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
 .main {
     margin: 0;
     height: 100%;
@@ -163,12 +168,11 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    padding: 2%;
 }
 
 .name-text {
     margin: 0;
-    padding-left: 9%;
+    padding: 0 1rem 0 9%;
     color: #ffffff;
     font-size: 4vh;
     word-break: break-word;
@@ -177,7 +181,7 @@ body {
 
 .swe-text {
     margin: 0;
-    padding-left: 9%;
+    padding: 0 1rem 0 9%;
     color: rgb(212, 212, 212);
     word-break: normal;
     font-weight: 100;
