@@ -141,9 +141,7 @@ body {
     background: rgba(0, 0, 0, 0.157);
 }
 
-.container-section-1 {
-    
-}
+
 
 .container-section-1-overlay {
     margin: 0;
@@ -527,6 +525,7 @@ h6 {
         background-image: url('./images/portfolio-background5.jpg');
         background-repeat: no-repeat;
         background-size: cover;
+        background-position: -500px;
         width: 100vw;
         height: 100vh;
     }
