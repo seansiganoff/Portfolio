@@ -490,6 +490,16 @@ h6 {
         margin: 20px auto;
     }
 
+    .background-for-the-whole-page {
+        background-image: url('./images/portfolio-background5.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+    .background-for-the-whole-page-overlay {
+        background-color: rgba(15, 15, 15, 0.521);
+    }
     
 }
 
@@ -529,7 +539,7 @@ h6 {
     h6 {
         font-size: 3vw;
     }
-
+    
 }
 @media only screen and (max-width: 300px) {
     .contact-container {
