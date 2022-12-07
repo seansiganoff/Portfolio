@@ -236,83 +236,52 @@ body {
 .projects {
     margin: 0 auto;
     padding: 3vw;
-    padding-bottom: 0;
     width: 80%;
-    background: rgba(255, 255, 255, 0.406);
+    background: rgba(255, 255, 255, 0.386);
 }
 
-.thumbnail-container {
-    margin: auto;
-    position: relative;
-    width: 23vw;
-    height: 23vw;
-    background: rgba(255, 255, 255, 0);
-    
-}
-
-.thumbnail-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: all 0.1s ease;
-}
-
-.thumbnail-front {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    backface-visibility: hidden;
-    font-family: "Lato", Sans-serif;
-}
-
-.thumbnail-back {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    backface-visibility: hidden;
-    background: rgb(0, 0, 0);
-    color: white;
-    transform: rotateY(180deg);
-    text-align: center;
-    display: grid;
-    font-size: 1vw;
-    justify-content: center;
-    align-items: center;
-    visibility: hidden;
-    padding: 10%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.thumbnail-card:hover {
-    transform: rotateY(0deg);
-    visibility: hidden;
-}
-
-
-.thumbnailImages {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-flow:  wrap;
+.projects a:visited, .projects a:link {
+    color: black;
 }
 
 .projects-text {
     font-size: 4vw;
-    text-align: center;
     color: rgba(0, 0, 68, 0.801);
-    word-break: break-all;
+    text-align: center;
     padding-bottom: 4vw;
 }
-
 .projects img {
-    margin: 10%;
-    height: 70%;
-    width: 80%;
+    height: 300px;
+    width: 350px;
 
 }
+
+
+
+.thumbnail-container {
+    margin:  1rem auto;
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: top;
+    border: 2px black solid;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.621);
+}
+
+.thumbnail-left {
+    margin: 0 10px
+}
+
+.thumbnail-right {
+    margin: 0 10px;
+    list-style-position: inside;
+}
+
+.thumbnail-right p, .thumbnail-right li {
+    font-size: x-small;
+}
+
 
 
 
@@ -475,13 +444,25 @@ h6 {
 
 /* ///////////////////////////////////////// Responsive Design //////////////////////////////////////////////////// */
 
+@media only screen and (max-width: 1200px) {
+    .thumbnail-right p {
+        font-size: 1.2vw;
+    }
 
+    .thumbnail-right h2 {
+        font-size: 2.5vw;
+    }
+
+    .thumbnail-right li {
+        font-size: 1.2vw;
+    }
+}
 
 @media only screen and (max-width: 1000px) {
-    .thumbnail-container {
+    /* .thumbnail-container {
         width: 50vw;
         height: 50vw;
-    }
+    } */
 
     .languages-img {
         height: 15vw;
@@ -497,6 +478,26 @@ h6 {
     
 }
 
+@media only screen and (max-width: 900px) {
+    .thumbnail-container {
+        display: block;
+    }
+    .thumbnail-left {
+        display: none;
+    }
+
+    .thumbnail-right p, .thumbnail-right li {
+        font-size: small;
+    }
+    .thumbnail-container h2 {
+        font-size: large;
+    }
+
+    
+    
+    
+    
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -511,11 +512,7 @@ h6 {
     .about-text-container p {
         font-size: 4vw;
     }
-    .thumbnail-container {
-        width: 80vw;
-        height: 80vw;
-    }
-
+    
     
     .about, .projects, .container-section-4, .container-section-5, .footer {
         width: 100%;
@@ -549,6 +546,17 @@ h6 {
     }
     h6 {
         font-size: 3vw;
+    }
+
+    .thumbnail-right p, .thumbnail-right li {
+        font-size: 3.3vw;
+    }
+    .thumbnail-container h2 {
+        font-size: 5vw;
+    }
+
+    .thumbnail-container {
+        padding: 10px;
     }
     
 }
