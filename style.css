@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&family=Cinzel&family=Handlee&family=Maitree:wght@300&family=Merienda:wght@700&family=Moulpali&family=Playfair+Display+SC&family=Single+Day&family=Yrsa&display=swap');
 
-
+h2 {
+    color: rgba(0, 0, 59, 0.932);
+}
 
 * {
     margin: 0;
@@ -198,7 +200,9 @@ body {
     margin: 0 auto;
     background-color: rgba(0, 0, 59, 0.711);
     padding: 3vw;
-    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 
@@ -206,72 +210,98 @@ body {
 .about-text-container {
     align-self: center;
     color: white;
+    padding: 1rem;
+    
 }
-.about-text-container h1 {
+.about-heading {
     margin: 0 auto;
-    font-size: 5vw;
+    font-size: 4vw;
     color: white;
 }
 
+.about-text-list {
+    color: white;
+    display: flex;
+    text-align: left;
+    padding: 1rem ;
+    width: 30%;
+    font-size: x-small;
+}
+.about-text-list li {
+    color: white;
+    list-style-position: inside;
+}
 
 
 .about-text-container p {
-    margin: 0 auto;
     margin-bottom: 20px;
     text-align: left;
-    font-size: medium;
+    font-size: x-small;
     font-weight: 100;
     color: rgb(255, 255, 255);
+    padding-right: 1rem;
+    
+}
+.about-text-list li {
+    list-style-position: inside;
 }
 
 /*/////////////////////////////////////// Section 3 projects /////////////////////////////// */
 
 .container-section-3 {
-    margin: 0;
-    width: 100%;
-    padding-bottom: 0;
-    
+    margin: 0 auto;
+    width: 80%;
+    background: rgba(255, 255, 255, 0.728);
+    padding: 4vw;
 }
 
 .projects {
-    margin: 0 auto;
-    padding: 3vw;
-    width: 80%;
-    background: rgba(255, 255, 255, 0.386);
+    
+    display: block;
 }
 
 .projects a:visited, .projects a:link {
     color: black;
 }
 
-.projects-text {
+.projects-heading {
     font-size: 4vw;
     color: rgba(0, 0, 68, 0.801);
     text-align: center;
     padding-bottom: 4vw;
 }
-.projects img {
-    height: 300px;
-    width: 350px;
 
+.projects-container {
+    display: flex;
+    justify-content: center;
+    align-items: top;
 }
-
-
 
 .thumbnail-container {
-    margin:  1rem auto;
-    padding: 30px;
-    width: 100%;
-    display: flex;
+    margin: 0 auto;
+    display: block;
+    width: 30%;
+    padding: 1rem;
     align-items: top;
-    border: 2px black solid;
+    border: 1px rgba(0, 0, 59, 0.711) solid;
     border-radius: 7px;
-    background-color: rgba(255, 255, 255, 0.621);
+    background-color: rgba(255, 255, 255, 0.852);
 }
 
-.thumbnail-left {
-    margin: 0 10px
+.thumbnail-container:hover {
+    transition: 0s;
+    flex-grow: 10%;
+    box-shadow: 0px 0px 50px 0px rgba(255, 255, 255, 0.909);
 }
+
+
+
+.thumbnail-left img {
+    width: 100%;
+    height: 15vw;
+}
+
+
 
 .thumbnail-right {
     margin: 0 10px;
@@ -280,6 +310,7 @@ body {
 
 .thumbnail-right p, .thumbnail-right li {
     font-size: x-small;
+    word-break: keep-all;
 }
 
 
@@ -291,14 +322,15 @@ body {
     margin: 0 auto;
     width: 80%;
     padding: 4vw;
-    background-color: rgba(0, 0, 0, 0.132);
+    background-color: rgba(0, 0, 0, 0.459);
 }
 
-.languages-text {
+.languages-heading {
     font-size: 4vw;
     color: white;
     text-align: center;
     padding-bottom: 4vw;
+
 }
 
 .languages {
@@ -339,7 +371,7 @@ body {
     margin: 0;
 }
 
-.container-section-5 h1 {
+.github-heading {
     font-size: 4vw;
     color: rgba(0, 0, 68, 0.801);
     text-align: center;
@@ -445,16 +477,21 @@ h6 {
 /* ///////////////////////////////////////// Responsive Design //////////////////////////////////////////////////// */
 
 @media only screen and (max-width: 1200px) {
-    .thumbnail-right p {
-        font-size: 1.2vw;
-    }
+    
 
     .thumbnail-right h2 {
         font-size: 2.5vw;
     }
 
-    .thumbnail-right li {
-        font-size: 1.2vw;
+}
+
+@media only screen and (max-width: 1000px) {
+    .about {
+        display: block;
+    }
+
+    .about-text-list {
+        width: 100%;
     }
 }
 
@@ -469,7 +506,7 @@ h6 {
         width: 15vw;
     }
 
-    .about-text-container h1, .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
+    .about-heading, .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
         margin: 20px auto;
     }
 
@@ -478,30 +515,24 @@ h6 {
     
 }
 
+
 @media only screen and (max-width: 900px) {
-    .thumbnail-container {
-        display: block;
-    }
-    .thumbnail-left {
-        display: none;
-    }
+   .projects-container {
+    display: block;
+   }
+   .thumbnail-container {
+    width: 100%;
+   }
 
-    .thumbnail-right p, .thumbnail-right li {
-        font-size: small;
-    }
-    .thumbnail-container h2 {
-        font-size: large;
-    }
-
-    
-    
-    
-    
+   .thumbnail-left img {
+    height: 40vw;
+   }
 }
 
 
+
 @media only screen and (max-width: 600px) {
-    .about-text-container h1, .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
+     .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
         font-size: 7vw;
     }
 
@@ -509,14 +540,11 @@ h6 {
         font-size: 4vw;
     }
 
-    .about-text-container p {
-        font-size: 4vw;
+    .about-heading, .projects-heading, .github-heading, .languages-heading {
+        font-size: large;
     }
-    
-    
-    .about, .projects, .container-section-4, .container-section-5, .footer {
-        width: 100%;
-    }
+
+
 
     .container-section-1 {
         background-image: url('./images/portfolio-background5.jpg');
@@ -534,6 +562,7 @@ h6 {
     .background-for-the-whole-page-overlay {
         background-color: rgb(115, 115, 115);
     }
+    
 }
 
 
@@ -548,9 +577,7 @@ h6 {
         font-size: 3vw;
     }
 
-    .thumbnail-right p, .thumbnail-right li {
-        font-size: 3.3vw;
-    }
+    
     .thumbnail-container h2 {
         font-size: 5vw;
     }
@@ -564,6 +591,8 @@ h6 {
     .contact-container {
         display: grid;
     }
+
+    
 
 }
 
