@@ -9,7 +9,7 @@ function reveal() {
     for(let i = 0; i < reveals.length; i++) {
         let windowHeight = window.innerHeight;
         let revealTop = reveals[i].getBoundingClientRect().top;
-        let revealPoint = 50;
+        let revealPoint = 150;
 
         if(revealTop < windowHeight - revealPoint) {
             reveals[i].classList.add('active');
@@ -81,3 +81,17 @@ function init() {
 
 document.addEventListener("DOMContextLoaded", init());
 
+///////////////////////////// black out ////////////////////////////
+
+
+
+let changeBackground = () => {
+    if(window.scrollY > 150) {
+        document.getElementById('background-for-the-whole-page-overlay').style.background = 'rgba(0, 0, 0, 0.157)';
+        console.log('its working!')
+    } else {
+        document.getElementById('background-for-the-whole-page-overlay').style.background = 'rgba(0, 0, 0)';
+    }
+}
+
+window.addEventListener('scroll', changeBackground)
