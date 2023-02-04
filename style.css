@@ -332,11 +332,12 @@ body {
     background-color: rgb(0, 173, 0);
     padding: 10px;
     margin-top: 10px;
+    transition: all 0.5s ease;
   }
 
   .button:hover {
     background-color: rgb(3, 220, 3);
-    transition: 0.5s ease-in-out;
+    
     box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.7);
   }
 
@@ -595,6 +596,9 @@ h6 {
         height: 43vh;
     }
 
+    .projects-image-text {
+        font-size: 2.4vw;
+    }
     .github-div h3 {
         font-size: 4vw;
     }
