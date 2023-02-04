@@ -8,7 +8,7 @@ h2 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    word-break: break-all;
 }
 
 body {
@@ -216,6 +216,7 @@ body {
     margin: 0 auto;
     font-size: 4vw;
     color: white;
+    word-break: break-all;
 }
 
 .about-text-list {
@@ -255,7 +256,6 @@ body {
 }
 
 .projects {
-    
     display: block;
 }
 
@@ -268,6 +268,7 @@ body {
     color: rgba(0, 0, 68, 0.801);
     text-align: center;
     padding-bottom: 7vw;
+    word-break: break-all;
 }
 
 .projects-container {
@@ -313,7 +314,7 @@ body {
 
 .projects-image-text {
     color: white;
-    font-size: 0.7vw;
+    font-size: 0.6rem;
     position: absolute;
     display: block;
     text-align: left;
@@ -333,6 +334,10 @@ body {
     padding: 10px;
     margin-top: 10px;
     transition: all 0.5s ease;
+    color: whitesmoke;
+  }
+  .button:visited {
+    color: #777;
   }
 
   .button:hover {
@@ -523,7 +528,7 @@ h6 {
     }
 
     .projects-image-text {
-        font-size: 1.3vw;
+        font-size: 0.9rem;
     }
 
     .image {
@@ -567,7 +572,7 @@ h6 {
     display: block;
    }
    .projects-image-text {
-    font-size: 2vw;
+    font-size: 1rem;
    }
    
    .projects-wrapper {
@@ -597,7 +602,7 @@ h6 {
     }
 
     .projects-image-text {
-        font-size: 2.4vw;
+        font-size: 0.7rem;
     }
     .github-div h3 {
         font-size: 4vw;
@@ -644,14 +649,15 @@ h6 {
     }
 
     
-    .thumbnail-container h2 {
-        font-size: 5vw;
-    }
+    
 
     .thumbnail-container {
         padding: 10px;
     }
     
+    .projects-image-text {
+        font-size: 3vw;
+    }
 }
 @media only screen and (max-width: 300px) {
     .contact-container {
