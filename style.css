@@ -219,6 +219,8 @@ body {
     word-break: break-all;
 }
 
+
+
 .about-text-list {
     color: white;
     display: flex;
@@ -227,9 +229,10 @@ body {
     width: 30%;
     font-size: x-small;
 }
-.about-text-list li {
+li {
     color: white;
     list-style-position: inside;
+    font-size: x-small;
 }
 
 
