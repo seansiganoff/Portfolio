@@ -279,6 +279,8 @@ body {
 .projects-wrapper {
     display: block;
     margin: 10px;
+    width: 30%;
+    height: auto;
 }
 
 .projects-image-container {
@@ -305,7 +307,7 @@ body {
 .image {
     display: block;
     width: 100%;
-    height: fit-content;
+    height: 13rem;
     
 }
 
@@ -520,7 +522,11 @@ h6 {
     }
 
     .projects-image-text {
-        font-size: 1.5vw;
+        font-size: 1.3vw;
+    }
+
+    .image {
+        height: 21rem;
     }
 }
 
@@ -583,6 +589,10 @@ h6 {
 @media only screen and (max-width: 600px) {
      .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
         font-size: 7vw;
+    }
+
+    .image {
+        height: 43vh;
     }
 
     .github-div h3 {
