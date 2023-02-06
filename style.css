@@ -600,6 +600,7 @@ h6 {
 
    .background-for-the-whole-page-overlay {
     padding-bottom: 0;
+    background-color: black;
    }
    
 }
@@ -610,8 +611,36 @@ h6 {
      .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
         font-size: 7vw;
     }
+    .container-section-2 {
+        background-color: rgb(7, 0, 99);
+    }
 
- 
+    .container-section-3 {
+        background-color: rgb(225, 225, 225);
+    }
+    .container-section-4 {
+        background-color: rgb(2, 2, 2);
+    }
+
+    .container-section-5 {
+        background-color: rgb(99, 99, 99);
+    }
+    .background-for-the-whole-page {
+        background-image: none;
+    }
+    .github-heading {
+        color: whitesmoke;
+    }
+
+    .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
+        box-shadow: none;
+       }
+
+    
+   
+    .name-text {
+        padding-top: 40%;
+    }
     .github-div h3 {
         font-size: 4vw;
     }
@@ -627,7 +656,7 @@ h6 {
         background-repeat: no-repeat;
         background-size: cover;
         width: 100vw;
-        height: 100vh;
+        height: 80vh;
     }
     .container-section-1-overlay {
         background-color: rgba(0, 0, 0, 0.584);
