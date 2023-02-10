@@ -81,14 +81,13 @@ function init() {
 
 document.addEventListener("DOMContextLoaded", init());
 
-///////////////////////////// black out ////////////////////////////
+///////////////////////////// black out home screen on scroll ////////////////////////////
 
 
 
 let changeBackground = () => {
     if(window.scrollY > 150) {
         document.getElementById('background-for-the-whole-page-overlay').style.background = 'rgba(0, 0, 0, 0.157)';
-        console.log('its working!')
     } else {
         document.getElementById('background-for-the-whole-page-overlay').style.background = 'rgba(0, 0, 0)';
     }

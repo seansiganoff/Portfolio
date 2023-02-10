@@ -561,7 +561,10 @@ h6 {
 
 
 
+
+
 @media only screen and (max-width: 1000px) {
+    
     .about {
         display: block;
     }
@@ -569,11 +572,6 @@ h6 {
     .about-text-list {
         width: 100%;
     }
-}
-
-@media only screen and (max-width: 1000px) {
-    
-
     .languages-img {
         height: 15vw;
         width: 15vw;
@@ -598,12 +596,24 @@ h6 {
     width: 100%;
     padding: 7vw;
    }
+   .container-section-2 {
+    background-color: rgb(0, 0, 59);
+   }
 
    .background-for-the-whole-page-overlay {
     padding-bottom: 0;
     background-color: black;
    }
-   
+   .container-section-3, .container-section-5 {
+    background-color: white;
+   }
+   .container-section-4 {
+    background-color: black;
+   }
+   .github-div {
+    background-color: black;
+    padding: 10px;
+   }
 }
 
 
@@ -612,8 +622,13 @@ h6 {
      .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
         font-size: 7vw;
     }
-    .container-section-2 {
-        background-color: rgb(7, 0, 99);
+    
+    .about-text-container p, li {
+        font-size: xx-small;
+    }
+
+    .material-icons {
+        padding: 10px;
     }
 
     .container-section-3 {
@@ -623,9 +638,7 @@ h6 {
         background-color: rgb(2, 2, 2);
     }
 
-    .container-section-5 {
-        background-color: rgb(99, 99, 99);
-    }
+   
     .background-for-the-whole-page {
         background-image: none;
     }
@@ -675,9 +688,7 @@ h6 {
     .menu_link {
         font-size: 20px;
     }   
-    .material-icons {
-        padding: 20px 10px;
-    }
+    
     h6 {
         font-size: 3vw;
     }
@@ -700,14 +711,6 @@ h6 {
     }
     
     
-}
-@media only screen and (max-width: 300px) {
-    .contact-container {
-        display: grid;
-    }
-
-    
-
 }
 
 
