@@ -632,7 +632,7 @@ h6 {
     }
 
     .container-section-3 {
-        background-color: rgb(225, 225, 225);
+        background-color: rgb(255, 255, 255);
     }
     .container-section-4 {
         background-color: rgb(2, 2, 2);
@@ -642,9 +642,7 @@ h6 {
     .background-for-the-whole-page {
         background-image: none;
     }
-    .github-heading {
-        color: whitesmoke;
-    }
+    
 
     .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
         box-shadow: none;
