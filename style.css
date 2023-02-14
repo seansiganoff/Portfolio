@@ -277,7 +277,7 @@ li {
     margin: 0 auto;
     width: 80%;
     background: rgba(255, 255, 255, 0.728);
-    padding: 4vw;
+    padding: 4vw 0;
     box-shadow: 0 0 40px 1px rgba(255, 255, 255, 0.7);
 }
 
@@ -318,7 +318,8 @@ li {
 }
 
 .projects-image-container:hover .projects-image-overlay {
-    height: 100%;
+    height: 95%;
+    background-color: #757575f7;
   }
 
 .projects-image-container:hover {
@@ -330,11 +331,13 @@ li {
     bottom: 0;
     left: 0;
     right: 0;
-    background-color: #000000d7;
+    background-color: #757575a5;
     overflow: hidden;
     width: 100%;
-    height: 0;
+    height: 50px;
     transition: .5s ease;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
 .image {
@@ -345,15 +348,11 @@ li {
 }
 
 .projects-image-text {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 0.6rem;
     position: absolute;
     display: block;
     text-align: left;
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); */
     width: 100%;
     list-style: inside;
     padding: 5%;
@@ -367,21 +366,24 @@ li {
   .button {
     width: 100%;
     background-color: rgb(0, 173, 0);
-    padding: 10px;
+    padding: 5px 10px;
     margin-top: 10px;
     color: whitesmoke;
     border: 1px black solid;
-    
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    border-radius: 10px;
   }
   .button:visited {
     color: #777;
+    
   }
 
   .button:hover {
     background-color: rgb(3, 220, 3);
-    /* transition: all 0.2 ease; */
     box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.7);
-    transition: all 0.3s ease;
+    
   }
 
 
@@ -498,7 +500,7 @@ a:visited {
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
-    display: grid;
+    display: block;
     padding-bottom: 0;
 }
 
@@ -507,8 +509,10 @@ a:visited {
 .contact-container {
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
+    flex-flow: wrap;
 }
 
 .contact-container h4 {
