@@ -84,6 +84,11 @@ function updateLines() {
 }
 
 function updateHighScore() {
+    let getScoreFromLocalStorage = localStorage.getItem('high-score')
+    if(getScoreFromLocalStorage === null) {
+        localStorage.setItem('high-score', 0);
+        player.score = 0
+    }
     document.getElementById('high-score').innerText = 'HIGH-SCORE: ' + localStorage.getItem('high-score');
 }
 
@@ -120,12 +125,8 @@ function playerReset() {
         updateScore();
         updateLines()
         const getScoreFromLocalStorage = localStorage.getItem('high-score')
-        if(getScoreFromLocalStorage === null) {
-            localStorage.setItem('high-score', 0);
-        }
         const hs = player.score > getScoreFromLocalStorage ? player.score : getScoreFromLocalStorage;
         localStorage.setItem('high-score', hs)
-        console.log(localStorage.getItem('high-score'))
         ModalWindow.openMedia({ title: 'GAME OVER!', content: 'Would you like to play again?' }); 
     }
 }
