@@ -338,6 +338,7 @@ const ModalWindow = {
         document.body.addEventListener("click", e => {
             if (e.target.classList.contains("modal__close")) {
                 this.closeModal(e.target);
+                updateHighScore()
             }
         });
     },
