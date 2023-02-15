@@ -120,7 +120,9 @@ function playerReset() {
         updateScore();
         updateLines()
         const getScoreFromLocalStorage = localStorage.getItem('high-score')
-        console.log(getScoreFromLocalStorage)
+        if(getScoreFromLocalStorage === null) {
+            localStorage.setItem('high-score', 0);
+        }
         const hs = player.score > getScoreFromLocalStorage ? player.score : getScoreFromLocalStorage;
         localStorage.setItem('high-score', hs)
         console.log(localStorage.getItem('high-score'))
