@@ -119,8 +119,11 @@ function playerReset() {
         gameOver = true;
         updateScore();
         updateLines()
-        const hs = player.score > localStorage.getItem('high-score') ? player.score : localStorage.getItem('high-score');
+        const getScoreFromLocalStorage = localStorage.getItem('high-score')
+        console.log(getScoreFromLocalStorage)
+        const hs = player.score > getScoreFromLocalStorage ? player.score : getScoreFromLocalStorage;
         localStorage.setItem('high-score', hs)
+        console.log(localStorage.getItem('high-score'))
         ModalWindow.openMedia({ title: 'GAME OVER!', content: 'Would you like to play again?' }); 
     }
 }
