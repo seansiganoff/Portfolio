@@ -639,6 +639,13 @@ h6 {
         padding: 10px;
     }
 
+    .projects-image-text h3 {
+        font-size: x-small;
+    }
+
+    .container-section-2 {
+        padding: 7vw 0;
+    }
     .container-section-3 {
         background-color: rgb(255, 255, 255);
     }
