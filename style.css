@@ -579,6 +579,9 @@ h6 {
 
     .container-section-1 {
         height: 120vh;
+        /* background-image: url('./images/portfolio-background5.jpg');
+        background-repeat: no-repeat;
+        background-size: cover; */
     }
 
 
@@ -611,10 +614,7 @@ h6 {
 
 @media only screen and (max-width: 900px) {
    
-   .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
-    width: 100%;
-    padding: 7vw;
-   }
+   
    .container-section-2 {
     background-color: rgb(0, 0, 59);
    }
@@ -642,6 +642,11 @@ h6 {
         font-size: 7vw;
     }
     
+    .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
+        width: 100%;
+        padding: 7vw;
+       }
+
     .about-text-container p, li {
         font-size: xx-small;
     }
