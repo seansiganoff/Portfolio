@@ -572,7 +572,16 @@ h6 {
 
 
 @media only screen and (max-width: 1000px) {
-    
+    .background-for-the-whole-page {
+        background-image: none;
+        background-color: #cfcfcf;
+    }
+
+    .container-section-1 {
+        height: 120vh;
+    }
+
+
     .about {
         display: block;
     }
@@ -592,7 +601,9 @@ h6 {
         margin-bottom: 20px;
     }
 
-    
+    .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
+        box-shadow: 0 0 40px 1px rgba(0, 0, 0, 0.495);
+       }
     
     
 }
@@ -654,14 +665,12 @@ h6 {
     }
 
    
-    .background-for-the-whole-page {
+    /* .background-for-the-whole-page {
         background-image: none;
-    }
+    } */
     
 
-    .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
-        box-shadow: none;
-       }
+    
 
     
    
@@ -678,18 +687,8 @@ h6 {
 
     
 
-    .container-section-1 {
-        background-image: url('./images/portfolio-background5.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-        height: 80vh;
-    }
-    .container-section-1-overlay {
-        background-color: rgba(0, 0, 0, 0.584);
-        width: 100%;
-        height: 100%;
-    }
+    
+    
     .background-for-the-whole-page-overlay {
         background-color: rgb(115, 115, 115);
     }
