@@ -580,10 +580,15 @@ h6 {
     }
 
     .container-section-1 {
-        height: 120vh;
-        /* background-image: url('./images/portfolio-background5.jpg');
+        height: 70vh;
+        background-image: url('./images/portfolio-background5.jpg');
         background-repeat: no-repeat;
-        background-size: cover; */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .container-section-1-overlay {
+        background-color: #30303080;
     }
 
     .image {
