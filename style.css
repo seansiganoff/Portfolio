@@ -341,7 +341,7 @@ li {
 
 .image {
     width: 100%;
-    height: 12rem;
+    max-height: 12rem;
     
 }
 
@@ -582,9 +582,7 @@ h6 {
         background-size: cover; */
     }
 
-    .projects-container {
-        display: grid;
-    }
+    
 
     .about {
         display: block;
