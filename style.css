@@ -582,6 +582,9 @@ h6 {
         background-size: cover; */
     }
 
+    .projects-container {
+        display: grid;
+    }
 
     .about {
         display: block;
