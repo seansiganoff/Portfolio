@@ -587,9 +587,12 @@ h6 {
     }
 
     .image {
-        width: 550px;
+        max-height: 15rem;
     }
     
+    .projects-wrapper {
+        min-width: 530px;
+    }
 
     .about {
         display: block;
@@ -647,6 +650,10 @@ h6 {
      .projects-text, .languages-text, .footer h4, .container-section-5 h1 {
         font-size: 7vw;
     }
+
+    .projects-wrapper {
+        min-width: 90%;
+    }
     
     .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
         width: 100%;
@@ -674,15 +681,6 @@ h6 {
     .container-section-4 {
         background-color: rgb(2, 2, 2);
     }
-
-   
-    /* .background-for-the-whole-page {
-        background-image: none;
-    } */
-    
-
-    
-
     
    
     .name-text {
@@ -716,9 +714,7 @@ h6 {
         font-size: 3vw;
     }
 
-    .projects-wrapper {
-        min-width: 90%;
-    }
+    
     
     .projects-image-text, .projects-image-text li {
         font-size: 0.5rem;
