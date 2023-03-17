@@ -361,6 +361,9 @@ li {
   .projects-image-text h3 {
     font-size: small;
   }
+  .projects-image-text h5 {
+    font-weight: 100;
+  }
   .projects-image-text li {
     font-size: 0.6rem;
   }
@@ -664,7 +667,7 @@ h6 {
     }
 
     .projects-image-overlay {
-        height: 17%;
+        height: 20%;
     }
     
     .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
