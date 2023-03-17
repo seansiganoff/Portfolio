@@ -575,6 +575,10 @@ h6 {
         background-color: #cfcfcf;
     }
 
+    .container-section-2, .container-section-3, .container-section-4, .container-section-5, .container-section-6 {
+        width: 100%;
+    }
+
     .container-section-1 {
         height: 120vh;
         /* background-image: url('./images/portfolio-background5.jpg');
