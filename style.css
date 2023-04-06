@@ -74,7 +74,7 @@ body {
 }
 
 .menu {
-    background: #7f7f7f;
+    background: #b8b8b8;
     display: flex;
     align-items: center;
     position: fixed;
@@ -90,7 +90,6 @@ body {
 }
 
 .menu.is-active {
-    opacity: .9;
     visibility: visible;
     display: flex;
     justify-content: center;
